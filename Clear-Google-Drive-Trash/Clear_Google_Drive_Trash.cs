@@ -27,10 +27,9 @@ namespace Clear_Google_Drive_Trash
             }
 
             String scope = "https://docs.google.com/feeds ";
-            scope += "https://docs.google.com/feeds ";
             scope += "https://www.googleapis.com/auth/userinfo.email ";
             scope += "https://www.googleapis.com/auth/userinfo.profile ";
-            //scope += "https://www.googleapis.com/auth/drive"; // this scope will get you a "invalid_scope" response from the initial auth request, but "https://docs.google.com/feeds" just doesn't cut it.
+            scope += "https://www.googleapis.com/auth/drive"; // this scope will get you a "invalid_scope" response from the initial auth request, but "https://docs.google.com/feeds" just doesn't cut it.
             // http://stackoverflow.com/questions/24293523/im-trying-to-access-google-drive-through-the-cli-but-keep-getting-not-authori
             // https://developers.google.com/drive/web/scopes
             // https://accounts.google.com/o/oauth2/device/code
